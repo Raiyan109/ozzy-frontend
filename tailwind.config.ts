@@ -11,6 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        headingColor: '#12151A'
       },
       backgroundImage: {
         heroImg: 'url("/hero-img")',
