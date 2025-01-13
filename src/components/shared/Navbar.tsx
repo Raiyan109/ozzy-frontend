@@ -16,19 +16,19 @@ const Navbar = () => {
         setOpen(false);
     };
 
-    const changeColor = () => {
-        if (window.scrollY >= 100) {
-            setColor(true)
-        }
-        else {
-            setColor(false)
-        }
-    }
-    window.addEventListener('scroll', changeColor)
+    // const changeColor = () => {
+    //     if (window.scrollY >= 100) {
+    //         setColor(true)
+    //     }
+    //     else {
+    //         setColor(false)
+    //     }
+    // }
+    // window.addEventListener('scroll', changeColor)
 
     return (
         <div>
-            <div className="fixed top-0 left-0 w-full z-50 bg-white border-b backdrop-blur-lg bg-opacity-80">
+            <div className="fixed top-0 left-0 w-full z-50 bg-[#F2F5F7] border-b backdrop-blur-lg bg-opacity-80">
                 <div className="mx-auto max-w-[1580px] px-6 sm:px-6 lg:px-8 ">
                     <div className="relative flex h-16 justify-between">
                         <div className="flex flex-1 items-stretch justify-start">
@@ -60,7 +60,7 @@ const Navbar = () => {
                             </label>
 
                         </div>
-                        <div className={`${open ? 'px-2 py-3 absolute top-20 bg-[#F2F5F7] w-full flex flex-col items-center justify-center text-white' : 'hidden'} flex-1 md:flex flex-col md:flex-row gap-x-5 gap-y-2 md:items-center md:p-0 sm:p-4 p-4 justify-between md:bg-transparent bg-darkBrown md:shadow-none shadow-md rounded-md opacity-95`}>
+                        <div className={`${open ? 'px-2 py-3 absolute top-20 bg-[#F2F5F7] w-full flex flex-col items-center justify-center text-white' : 'hidden'} flex-1 md:flex flex-col md:flex-row gap-x-5 gap-y-2 md:items-center md:p-0 sm:p-4 p-4 justify-between md:bg-transparent bg-darkBrown md:shadow-none shadow-md opacity-95`}>
                             <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Home</Link>
                             <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Workout plan</Link>
                             <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Nutrition plan</Link>
