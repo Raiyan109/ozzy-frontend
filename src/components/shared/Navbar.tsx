@@ -1,8 +1,31 @@
+'use client'
 import Image from 'next/image'
 import logo from '@/assets/ozzy-nav-logo.png'
 import Link from 'next/link'
+import { useState } from 'react'
 
 const Navbar = () => {
+    const [open, setOpen] = useState(false);
+    const [color, setColor] = useState(false)
+
+    const handleClick = () => {
+        setOpen(!open);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const changeColor = () => {
+        if (window.scrollY >= 100) {
+            setColor(true)
+        }
+        else {
+            setColor(false)
+        }
+    }
+    window.addEventListener('scroll', changeColor)
+
     return (
         <div>
             <div className="fixed top-0 left-0 w-full z-50 bg-white border-b backdrop-blur-lg bg-opacity-80">
@@ -18,7 +41,26 @@ const Navbar = () => {
                                 />
                             </Link>
                         </div>
-                        <div className="flex-shrink-0 flex px-2 py-3 items-center space-x-8">
+                        <div className="flex-1 md:hidden ease-in-out duration-300 flex items-center justify-end">
+                            <label >
+                                <div
+                                    className="w-9 h-10 cursor-pointer flex flex-col items-center justify-center"
+                                >
+                                    <input className="hidden peer" type="checkbox" onClick={handleClick} />
+                                    <div
+                                        className="w-[50%] h-[2px] bg-black rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]"
+                                    ></div>
+                                    <div
+                                        className="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-center peer-checked:hidden"
+                                    ></div>
+                                    <div
+                                        className="w-[50%] h-[2px] bg-black rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-[45deg]"
+                                    ></div>
+                                </div>
+                            </label>
+
+                        </div>
+                        <div className={`${open ? 'px-2 py-3 absolute top-20 bg-[#F2F5F7] w-full flex flex-col items-center justify-center text-white' : 'hidden'} flex-1 md:flex flex-col md:flex-row gap-x-5 gap-y-2 md:items-center md:p-0 sm:p-4 p-4 justify-between md:bg-transparent bg-darkBrown md:shadow-none shadow-md rounded-md opacity-95`}>
                             <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Home</Link>
                             <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Workout plan</Link>
                             <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Nutrition plan</Link>
