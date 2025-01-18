@@ -16,4 +16,7 @@ body {
     @apply px-6 py-1.5 min-w-[150px] text-center text-white bg-[#345C8C] border border-[#345C8C] rounded-md active:text-[#345C8C] hover:bg-transparent hover:text-[#345C8C] focus:outline-none focus:ring
   }
 
+  .btn-circle {
+    @apply px-6 py-2.5 min-w-[150px] text-center text-white bg-[#345C8C] border border-white rounded-full active:text-[#345C8C] hover:bg-[#345C8C]/75 hover:text-white focus:outline-none focus:ring
+  }
 }

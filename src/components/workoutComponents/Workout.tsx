@@ -1,9 +1,10 @@
+import WorkoutHero from "./WorkoutHero"
 
 
 const Workout = () => {
     return (
-        <div>
-
+        <div className="mx-auto max-w-[1580px]">
+            <WorkoutHero />
         </div>
     )
 }
