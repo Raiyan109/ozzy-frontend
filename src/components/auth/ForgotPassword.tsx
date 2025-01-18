@@ -1,10 +1,9 @@
-import SigninImg from '@/assets/login.png'
+import forgotImg from '@/assets/forgot.png'
 import Image from 'next/image'
 import Link from 'next/link';
 import { CiMail, CiLock } from "react-icons/ci";
 
-
-const Signin = () => {
+const ForgotPassword = () => {
     return (
         <div>
             <div className=" bg-white md:h-screen">
@@ -12,7 +11,7 @@ const Signin = () => {
                     <div className="max-md:order-1 p-4">
                         {/* <img src="https://readymadeui.com/signin-image.webp" className="lg:max-w-[85%] w-full h-full aspect-square object-contain block mx-auto" alt="login-image" /> */}
                         <Image
-                            src={SigninImg}
+                            src={forgotImg}
                             alt='Sign up page'
                             height={800}
                             width={800}
@@ -55,4 +54,4 @@ const Signin = () => {
     )
 }
 
-export default Signin
+export default ForgotPassword
