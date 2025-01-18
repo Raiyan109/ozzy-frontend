@@ -35,9 +35,19 @@ const Workout = () => {
             name: 'Monday-Chest day',
             image: WorkoutImg
         },
+        {
+            id: 7,
+            name: 'Monday-Chest day',
+            image: WorkoutImg
+        },
+        {
+            id: 8,
+            name: 'Monday-Chest day',
+            image: WorkoutImg
+        },
     ]
     return (
-        <div className="mx-auto max-w-[1580px]">
+        <div className="mx-auto max-w-[1500px]">
             <WorkoutHero />
             <Workouts workouts={workouts} />
         </div>
