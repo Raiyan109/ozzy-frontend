@@ -56,7 +56,7 @@ const Signup = () => {
                                 <input className="pl-5 outline-none border-none text-[#345C8C] placeholder:text-[#345C8C]" type="text" name="" id="" placeholder="Password" />
                             </div>
 
-                            <button type="submit" className="block w-full bg-[#345C8C] mt-4 py-2 rounded-2xl text-white font-semibold mb-2">Register</button>
+                            <button type="submit" className="block w-full bg-[#345C8C] mt-4 py-2 rounded-full text-white font-semibold mb-2">Register</button>
                             <div className='text-center'>
                                 <span className="text-sm ml-2 cursor-pointer  text-white">Already  have an account ?  </span>
                                 <Link href='/signin' className='text-[#345C8C]'>Sign In</Link>
