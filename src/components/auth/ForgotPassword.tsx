@@ -1,10 +1,13 @@
+'use client'
 import forgotImg from '@/assets/forgot.png'
 import Image from 'next/image'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { CiMail, CiLock } from "react-icons/ci";
 import { FaArrowLeft } from "react-icons/fa";
 
 const ForgotPassword = () => {
+    const router = useRouter()
     return (
         <div>
             <div className=" bg-white md:h-screen">
@@ -24,8 +27,8 @@ const ForgotPassword = () => {
                         <form className="max-w-lg w-full mx-auto bg-[#FAFAFA66] p-7 rounded-xl">
                             <div className='space-y-6 mb-6'>
                                 <div className='flex items-center gap-5 justify-center'>
-                                    <FaArrowLeft className='text-white h-5 w-5' />
-                                    <h1 className="text-white font-bold text-2xl text-center">Forgot Password</h1>
+                                    <FaArrowLeft className='text-white h-5 w-5 hover:text-[#345C8C] cursor-pointer' onClick={() => router.back()} />
+                                    <h1 className="text-white font-bold text-2xl text-center ">Forgot Password</h1>
                                 </div>
                                 <p className='text-white/75 text-center text-sm'>Please enter your email address to reset
                                     your password.</p>
