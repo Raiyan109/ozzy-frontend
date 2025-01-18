@@ -13,7 +13,7 @@ body {
 
 @layer components {
   .btn {
-    @apply px-6 py-1.5 min-w-[150px] text-center text-white bg-[#EB4B73] border border-[#EB4B73] rounded-md active:text-[#EB4B73] hover:bg-transparent hover:text-[#EB4B73] focus:outline-none focus:ring
+    @apply px-6 py-1.5 min-w-[150px] text-center text-white bg-[#345C8C] border border-[#345C8C] rounded-md active:text-[#345C8C] hover:bg-transparent hover:text-[#345C8C] focus:outline-none focus:ring
   }
 
 }

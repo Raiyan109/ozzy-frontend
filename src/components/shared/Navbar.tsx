@@ -36,8 +36,8 @@ const Navbar = () => {
                                 <Image
                                     src={logo}
                                     alt='Ozzy Logo'
-                                    height={80}
-                                    width={80}
+                                    height={110}
+                                    width={110}
                                 />
                             </Link>
                         </div>
@@ -61,11 +61,11 @@ const Navbar = () => {
 
                         </div>
                         <div className={`${open ? 'px-2 py-3 absolute top-20 bg-[#F2F5F7] w-full flex flex-col items-center justify-center text-white' : 'hidden'}  md:flex flex-col md:flex-row gap-x-5 gap-y-2 md:items-center md:p-0 sm:p-4 p-4 justify-between md:bg-transparent bg-darkBrown md:shadow-none shadow-md opacity-95`}>
-                            <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Home</Link>
-                            <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Workout plan</Link>
-                            <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Nutrition plan</Link>
-                            <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Sports plan</Link>
-                            <Link href='/' className="text-gray-700 hover:text-[#EB4B73] text-sm font-medium">Subscription</Link>
+                            <Link href='/' className="text-gray-700 hover:text-[#345C8C] text-sm font-medium">Home</Link>
+                            <Link href='/' className="text-gray-700 hover:text-[#345C8C] text-sm font-medium">Workout plan</Link>
+                            <Link href='/' className="text-gray-700 hover:text-[#345C8C] text-sm font-medium">Nutrition plan</Link>
+                            <Link href='/' className="text-gray-700 hover:text-[#345C8C] text-sm font-medium">Sports plan</Link>
+                            <Link href='/' className="text-gray-700 hover:text-[#345C8C] text-sm font-medium">Subscription</Link>
                             <Link className="btn"
                                 href="/signup">Sign up
                             </Link>
