@@ -79,8 +79,8 @@ const Membership = ({ plans }: { plans: Plan[] }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {plans.map((plan: Plan) => (
                         <div key={plan.id} className="bg-white rounded-xl w-64 py-6">
-                            <div className="flex flex-col items-center justify-center text-[#EB4B73] gap-2 pb-5 border-b-2 border-b-[#EB4B73]/20">
-                                <h1 className="text-xl">{plan.name}</h1>
+                            <div className="flex flex-col items-center justify-center text-[#EB4B73] gap-2 pb-5 border-b-2 border-b-[#EB4B73]/20 min-h-[130px]">
+                                <h1 className="text-xl text-center">{plan.name}</h1>
                                 <div className="flex flex-col items-center">
                                     <div className="flex items-center text-xl">
                                         <span>{plan.price === 0 ? '' : '$'}</span>
@@ -89,17 +89,17 @@ const Membership = ({ plans }: { plans: Plan[] }) => {
                                     <span className="text-xs">{plan.price === 0 ? '' : '/month'}</span>
                                 </div>
                             </div>
-                            <div className="flex items-start justify-center py-6">
-                                <div className="space-y-5">
+                            <div className="flex items-center justify-center py-6">
+                                <div className="space-y-5 flex flex-col items-start justify-center">
                                     {plan.features.map((option, i) => (
-                                        <div key={i} className="flex items-center gap-3">
+                                        <div key={i} className="flex items-start gap-3">
                                             <Image
                                                 src={tickImg}
                                                 alt='Tick image'
                                                 height={15}
                                                 width={15}
                                             />
-                                            <h3 className="text-xs">{option}</h3>
+                                            <h3 className="text-xs max-w-[160px]">{option}</h3>
                                         </div>
                                     ))}
                                     {/* {plan.options.map((option, i) => (
