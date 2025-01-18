@@ -28,21 +28,21 @@ const About = () => {
                             <div>
                                 <ul className='list-disc text-sm'>
                                     <li>Learn at your own pace, anytime, anywhere.</li>
-                                    <li>Learn at your own pace, anytime, anywhere.</li>
+                                    <li>We will help you every step of your journey.</li>
                                 </ul>
                             </div>
 
                             <div className='space-y-7'>
                                 <div className='flex items-center gap-20 pb-7 border-b'>
                                     <div className='flex items-end'>
-                                        <h1 className='text-[#EB4B73] font-bold text-4xl'>30+</h1>
+                                        <h1 className='text-[#345C8C] font-bold text-4xl'>30+</h1>
                                         <h2 className='text-sm'>/Years</h2>
                                     </div>
                                     <h1 className='leading-4'>Our mission’s to drive grow & improve progress.</h1>
                                 </div>
                                 <div className='flex items-center gap-20'>
                                     <div className='flex items-end'>
-                                        <h1 className='text-[#EB4B73] font-bold text-4xl'>30+</h1>
+                                        <h1 className='text-[#345C8C] font-bold text-4xl'>30+</h1>
                                         <h2 className='text-sm'>/Years</h2>
                                     </div>
                                     <h1 className='leading-4'>Our mission’s to drive grow & improve progress.</h1>

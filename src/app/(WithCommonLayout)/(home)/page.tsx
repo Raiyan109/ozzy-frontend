@@ -7,8 +7,9 @@ import React from 'react'
 
 const HomePage = () => {
   const plans = [
-    { id: 1, name: '3 days trial', price: 0, features: ['Feature 1', 'Feature 2'] },
-    { id: 2, name: 'Pro', price: 20, features: ['Feature 1', 'Feature 2', 'Feature 3'] },
+    { id: 1, name: '3 days trial', price: 0, features: ['View Members Directory', 'View Members Profile', 'Send Private Messages', 'Add Media To Your Profile'] },
+    { id: 2, name: 'Basic ', price: 20, features: ['View Members Directory', 'View Members Profile', 'Send Private Messages', 'Add Media To Your Profile'] },
+    { id: 3, name: 'Talk to a fitness professional 30-40min', price: 60, features: ['Discuss your program', 'Track your progress by scheduling calls periodically', 'Accountability', ' life style coaching'] },
   ]
   return (
     <div>
