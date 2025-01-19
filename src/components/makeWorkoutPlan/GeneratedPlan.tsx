@@ -50,7 +50,7 @@ const GeneratedPlan = () => {
             <table className="w-full border-collapse border border-[#545454]">
                 <thead className="bg-[#B0C0D2]">
                     <tr>
-                        <th className="border border-[#545454] p-2 text-center font-normal text-[#545454]">Day</th>
+                        <th className="border border-[#545454] p-7 text-center font-normal text-[#545454]">Day</th>
                         <th className="border border-[#545454] p-2 text-center font-normal text-[#545454]">Workout</th>
                         <th className="border border-[#545454] p-2 text-center font-normal text-[#545454]">Details</th>
                     </tr>
@@ -58,7 +58,7 @@ const GeneratedPlan = () => {
                 <tbody>
                     {data.map((item, index) => (
                         // odd:bg-white even:bg-gray-100
-                        <tr key={index} className="">
+                        <tr key={index} className="text-sm">
                             <td className="border border-[#545454] p-2 text-[#545454]">{item.day}</td>
                             <td className="border border-[#545454] p-2 text-[#545454]">{item.workout}</td>
                             <td className="border border-[#545454] p-2">
@@ -81,8 +81,8 @@ const GeneratedPlan = () => {
                 </tbody>
             </table>
             <div className="mt-6">
-                <h2 className="text-lg font-semibold text-[#545454]">Additional Tips:</h2>
-                <ul className="list-disc list-inside mt-2 text-[#545454] mb-4">
+                <h2 className="text-md font-semibold text-[#545454]">Additional Tips:</h2>
+                <ul className="list-disc list-inside mt-2 text-[#545454] mb-4 text-sm">
                     <li>Diet: Focus on lean protein, complex carbs, and healthy fats. Stay hydrated.</li>
                     <li>Progression: Gradually increase weights and track running performance.</li>
                     <li>Consistency: Stick to the plan for 4 weeks and reassess.</li>
