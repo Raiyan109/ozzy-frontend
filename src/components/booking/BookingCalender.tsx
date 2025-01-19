@@ -66,7 +66,7 @@ const BookingCalender = () => {
                         <h1 className="text-[#4E4E4E] text-2xl">Afternoon</h1>
                         <div className="flex items-center gap-5">
                             <button className="btn bg-[#F7B9C9] text-[#4E4E4E] border-none outline-none rounded-xl py-3 text-xl flex items-center justify-center hover:bg-[#F7B9C9]/80 hover:text-[#4E4E4E]">2:00 PM</button>
-                            <button className="btn bg-[#F7B9C9] text-[#4E4E4E] border-none outline-none rounded-xl py-3 px-1 max-w-[70px] text-xl flex items-center justify-center hover:bg-[#F7B9C9]/80 hover:text-[#4E4E4E]">3:40 PM</button>
+                            <button className="btn bg-transparent border border-[#4E4E4E] text-[#4E4E4E]  rounded-xl py-3 px-1 max-w-[70px] text-xl flex items-center justify-center hover:bg-[#F7B9C9] hover:text-[#4E4E4E]">3:40 PM</button>
                         </div>
                     </div>
                     <div className="space-y-1 mt-8">
