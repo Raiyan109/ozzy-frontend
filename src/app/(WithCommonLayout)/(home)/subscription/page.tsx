@@ -1,6 +1,5 @@
 import Subscription from "@/components/subscription/Subscription"
 
-
 const SubscriptionPage = () => {
     return (
         <div>
