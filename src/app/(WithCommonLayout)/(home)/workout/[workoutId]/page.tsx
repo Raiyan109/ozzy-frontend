@@ -84,7 +84,7 @@ const WorkoutDetailsPage = async ({ params }: { params: { workoutId: string } })
 
     return (
         <div>
-            <WorkoutDetails workout={workout} />
+            <WorkoutDetails workout={workout} workouts={workouts} />
         </div>
     )
 }
