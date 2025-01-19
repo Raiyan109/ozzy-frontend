@@ -1,4 +1,5 @@
 import heroImage from "@/assets/workout-hero.png";
+import Link from "next/link";
 
 const WorkoutHero = () => {
     return (
@@ -13,8 +14,9 @@ const WorkoutHero = () => {
         >
             <div className="space-y-6">
                 <h1 className="text-white text-6xl max-w-lg leading-[90px] ">Get Ready for the Workout</h1>
-
-                <button className="btn-circle">Make your plan </button>
+                <Link href='/make-plan'>
+                    <button className="btn-circle">Make your plan </button>
+                </Link>
             </div>
         </div>
     )
