@@ -16,7 +16,7 @@ const MakeNutritionPlan = () => {
                         <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
                             <select className=" outline-none border-none text-[#345C8C] placeholder:text-[#345C8C] bg-transparent w-full" defaultValue="">
                                 <option value="" disabled>
-                                    Select level
+                                    Select gender
                                 </option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
@@ -24,64 +24,56 @@ const MakeNutritionPlan = () => {
                         </div>
                     </div>
                     <div className='space-y-1 mb-3'>
-                        <h1 className='text-[#4E4E4E]'>Where do you train ?</h1>
+                        <h1 className='text-[#4E4E4E]'>Your Age</h1>
                         <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
-                            {/* <TbGenderAndrogyne className="h-5 w-5 text-[#345C8C] font-bold" /> */}
+                            <input className="pl-5 outline-none border-none text-[#345C8C] placeholder:text-[#345C8C]" type="text" name="" id="" placeholder="" />
+                        </div>
+                    </div>
+                    <div className='space-y-1 mb-3'>
+                        <h1 className='text-[#4E4E4E]'>Your Height</h1>
+                        <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
+                            <input className="pl-5 outline-none border-none text-[#345C8C] placeholder:text-[#345C8C]" type="text" name="" id="" placeholder="" />
+                        </div>
+                    </div>
+                    <div className='space-y-1 mb-3'>
+                        <h1 className='text-[#4E4E4E]'>Your Weight</h1>
+                        <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
+                            <input className="pl-5 outline-none border-none text-[#345C8C] placeholder:text-[#345C8C]" type="text" name="" id="" placeholder="" />
+                        </div>
+                    </div>
+                    <div className='space-y-1 mb-3'>
+                        <h1 className='text-[#4E4E4E]'>Muscle Growth</h1>
+                        <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
+                            <input className="pl-5 outline-none border-none text-[#345C8C] placeholder:text-[#345C8C]" type="text" name="" id="" placeholder="" />
+                        </div>
+                    </div>
+
+                    <div className='space-y-1 mb-3'>
+                        <h1 className='text-[#4E4E4E]'>Weight/Fat Loss</h1>
+                        <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
                             <select className="outline-none border-none text-[#345C8C] placeholder:text-[#345C8C] bg-transparent w-full" defaultValue="">
                                 <option value="" disabled>
-                                    Select place of training
+                                    Select
                                 </option>
-                                <option value="at home">At Home</option>
-                                <option value="at the gym">At the gym</option>
+                                <option value="4">4 days</option>
                             </select>
                         </div>
                     </div>
                     <div className='space-y-1 mb-3'>
-                        <h1 className='text-[#4E4E4E]'>How long do you train ?</h1>
+                        <h1 className='text-[#4E4E4E]'>Improving fitness performance (long/distance/speed running)</h1>
                         <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
                             <select className="outline-none border-none text-[#345C8C] placeholder:text-[#345C8C] bg-transparent w-full" defaultValue="">
                                 <option value="" disabled>
-                                    Select time
+                                    Select
                                 </option>
-                                <option value="20">20 minutes</option>
-                                <option value="60">60 minutes</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div className='space-y-1 mb-3'>
-                        <h1 className='text-[#4E4E4E]'>Interested in growing a specific muscle ?</h1>
-                        <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
-                            <select className="outline-none border-none text-[#345C8C] placeholder:text-[#345C8C] bg-transparent w-full" defaultValue="">
-                                <option value="" disabled>
-                                    Select muscle
-                                </option>
-                                <option value="general growth">General Growth</option>
-                                <option value="legs and glutes">Legs and glues</option>
-                                <option value="back">Back</option>
-                                <option value="chest">Chest</option>
-                                <option value="shoulders and arms">Shoulders and arms</option>
-                                <option value="chest">Chest</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div className='space-y-1 mb-3'>
-                        <h1 className='text-[#4E4E4E]'>Any injuries ?</h1>
-                        <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
-                            <select className="outline-none border-none text-[#345C8C] placeholder:text-[#345C8C] bg-transparent w-full" defaultValue="">
-                                <option value="" disabled>
-                                    Select injury
-                                </option>
-                                <option value="lower back">Lower Back</option>
-                                <option value="knees">Knees</option>
-                                <option value="shoulder">Shoulder (Rotator cuff)</option>
-                                <option value="n/a">N/A</option>
+                                <option value="none">None</option>
                             </select>
                         </div>
                     </div>
 
 
                     <div className='flex justify-center items-center'>
-                        <Link href='/generated-plan'>
+                        <Link href='/generated-nutrition-plan'>
                             <button type="submit" className="w-fit px-20 bg-[#345C8C] mt-4 py-2 rounded-full text-white font-semibold mb-2">Generate Routine</button>
                         </Link>
                     </div>
