@@ -66,8 +66,7 @@ const Navbar = () => {
                             <Link href='/' className={`${pathname === "/" ? "text-[#345C8C] text-sm font-medium" : "text-gray-700 hover:text-[#345C8C] text-sm font-medium"}`}>Home</Link>
                             <Link href='/workout' className={`${pathname === "/workout" ? "text-[#345C8C] text-sm font-medium" : "text-gray-700 hover:text-[#345C8C] text-sm font-medium"}`}>Workout plan</Link>
                             <Link href='/nutrition' className={`${pathname === "/nutrition" ? "text-[#345C8C] text-sm font-medium" : "text-gray-700 hover:text-[#345C8C] text-sm font-medium"}`}>Nutrition plan</Link>
-                            <Link href='/' className={`${pathname === "/" ? "text-[#345C8C] text-sm font-medium" : "text-gray-700 hover:text-[#345C8C] text-sm font-medium"}`}>Sports plan</Link>
-                            <Link href='/' className={`${pathname === "/" ? "text-[#345C8C] text-sm font-medium" : "text-gray-700 hover:text-[#345C8C] text-sm font-medium"}`}>Subscription</Link>
+                            <Link href='/subscription' className={`${pathname === "/subscription" ? "text-[#345C8C] text-sm font-medium" : "text-gray-700 hover:text-[#345C8C] text-sm font-medium"}`}>Subscription</Link>
                             <Link className="btn"
                                 href="/signup">Sign up
                             </Link>
