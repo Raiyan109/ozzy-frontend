@@ -9,7 +9,7 @@ type Props = {
 }
 const SingleWorkout = ({ workout }: { workout: Props }) => {
     return (
-        <div className="bg-white rounded-xl p-6 space-y-5" onClick={() => redirect(`/workout/${workout?.id}`)}>
+        <div className="bg-white rounded-xl p-6 space-y-5 cursor-pointer" onClick={() => redirect(`/workout/${workout?.id}`)}>
             <div className="flex items-center justify-center">
                 <Image
                     src={workout.image}

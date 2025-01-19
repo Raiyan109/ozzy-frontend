@@ -1,4 +1,4 @@
-import NutritionImg from '@/assets/nutrition-hero.png'
+import NutritionImg from '@/assets/nutrition.png'
 import NutritionHero from "./NutritionHero"
 import Nutritions from "./Nutritions"
 
