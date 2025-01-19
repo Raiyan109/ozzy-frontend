@@ -82,7 +82,9 @@ const MakePlan = () => {
 
 
                     <div className='flex justify-center items-center'>
-                        <button type="submit" className="w-fit px-20 bg-[#345C8C] mt-4 py-2 rounded-full text-white font-semibold mb-2">Generate Routine</button>
+                        <Link href='/generated-plan'>
+                            <button type="submit" className="w-fit px-20 bg-[#345C8C] mt-4 py-2 rounded-full text-white font-semibold mb-2">Generate Routine</button>
+                        </Link>
                     </div>
                 </form>
             </div>
