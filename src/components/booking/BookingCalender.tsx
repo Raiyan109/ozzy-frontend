@@ -65,13 +65,16 @@ const BookingCalender = () => {
                     <div className="space-y-1 mt-8">
                         <h1 className="text-[#4E4E4E] text-2xl">Afternoon</h1>
                         <div className="flex items-center gap-5">
-                            <button className="btn bg-[#F7B9C9] text-[#4E4E4E] border-none outline-none rounded-xl py-3 text-xl flex items-center justify-center">2:00 PM</button>
-                            <button className="btn bg-[#F7B9C9] text-[#4E4E4E] border-none outline-none rounded-xl py-3 px-1 max-w-[70px] text-xl flex items-center justify-center">3:40 PM</button>
+                            <button className="btn bg-[#F7B9C9] text-[#4E4E4E] border-none outline-none rounded-xl py-3 text-xl flex items-center justify-center hover:bg-[#F7B9C9]/80 hover:text-[#4E4E4E]">2:00 PM</button>
+                            <button className="btn bg-[#F7B9C9] text-[#4E4E4E] border-none outline-none rounded-xl py-3 px-1 max-w-[70px] text-xl flex items-center justify-center hover:bg-[#F7B9C9]/80 hover:text-[#4E4E4E]">3:40 PM</button>
                         </div>
                     </div>
                     <div className="space-y-1 mt-8">
                         <h1 className="text-[#4E4E4E] text-2xl">Evening</h1>
                         <p className="text-[#4E4E4E] text-sm">No Availability</p>
+                    </div>
+                    <div className="mt-12">
+                        <button type="submit" className="w-fit px-20 bg-[#345C8C] mt-4 py-2 rounded-full text-white font-semibold mb-2">Next</button>
                     </div>
                 </div>
             </div>

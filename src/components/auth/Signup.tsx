@@ -38,8 +38,8 @@ const Signup = () => {
                             </div>
                             <div className="flex items-center border border-[#345C8C] py-2 px-3 rounded-full bg-white mb-4">
                                 <TbGenderAndrogyne className="h-5 w-5 text-[#345C8C] font-bold" />
-                                <select className="pl-5 outline-none border-none text-[#345C8C] placeholder:text-[#345C8C] bg-transparent w-full">
-                                    <option value="" disabled selected>
+                                <select className="pl-5 outline-none border-none text-[#345C8C] placeholder:text-[#345C8C] bg-transparent w-full" defaultValue="">
+                                    <option value="" disabled>
                                         Gender
                                     </option>
                                     <option value="option1">Male</option>
