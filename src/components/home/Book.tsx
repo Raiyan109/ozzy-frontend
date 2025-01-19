@@ -1,5 +1,6 @@
 import Image from "next/image"
 import bookImg from '@/assets/bookImg-1.png'
+import Link from "next/link"
 
 const appointments = [
     {
@@ -54,7 +55,9 @@ const Book = () => {
                                     <h1>{plan.price === 0 ? '' : '$'}{plan.price === 0 ? '' : plan.price}</h1>
                                 </div>
                                 <h1 className="text-xs text-center max-w-[200px]">{plan.description}</h1>
-                                <button className="btn py-1">Book</button>
+                                <Link href='/booking'>
+                                    <button className="btn py-1">Book</button>
+                                </Link>
                             </div>
                         </div>
                     ))}
