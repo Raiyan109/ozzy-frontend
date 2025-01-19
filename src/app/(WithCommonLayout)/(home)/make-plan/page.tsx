@@ -6,8 +6,8 @@ import Snow from '../../../../../videos/snow.mp4.mp4'
 const MakePlanPage = () => {
     return (
         <div>
-            <Video src={Snow} />
-            {/* <MakePlan /> */}
+            {/* <Video src={Snow} /> */}
+            <MakePlan />
         </div>
     )
 }
