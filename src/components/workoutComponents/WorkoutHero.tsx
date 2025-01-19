@@ -14,7 +14,7 @@ const WorkoutHero = () => {
         >
             <div className="space-y-6">
                 <h1 className="text-white text-6xl max-w-lg leading-[90px] ">Get Ready for the Workout</h1>
-                <Link href='/make-plan'>
+                <Link href='/make-workout-plan'>
                     <button className="btn-circle">Make your plan </button>
                 </Link>
             </div>

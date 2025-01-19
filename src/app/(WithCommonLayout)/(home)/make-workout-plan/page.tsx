@@ -3,7 +3,7 @@ import Video from 'next-video'
 import Snow from '../../../../../videos/snow.mp4.mp4'
 
 
-const MakePlanPage = () => {
+const MakeWorkoutPlanPage = () => {
     return (
         <div>
             {/* <Video src={Snow} /> */}
@@ -12,4 +12,4 @@ const MakePlanPage = () => {
     )
 }
 
-export default MakePlanPage
+export default MakeWorkoutPlanPage
