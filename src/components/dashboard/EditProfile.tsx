@@ -3,7 +3,7 @@ import profileImage from "@/assets/profile-image.png"
 import Link from "next/link"
 
 
-const Profile = () => {
+const EditProfile = () => {
     return (
         <div className="py-20">
             <div className="mx-auto max-w-[700px] h-screen py-20">
@@ -36,12 +36,12 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
-                <Link href='/user-dashboard/edit-profile' className="flex items-center justify-center">
-                    <button className="btn min-w-[300px] py-1">Edit Profile</button>
+                <Link href='/booking' className="flex items-center justify-center">
+                    <button className="btn min-w-[300px] py-1">Update</button>
                 </Link>
             </div>
         </div>
     )
 }
 
-export default Profile
+export default EditProfile
