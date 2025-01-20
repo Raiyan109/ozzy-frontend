@@ -49,6 +49,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -81,7 +82,26 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+/* Contact Us page Map */
+.responsive-map {
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 30%;
+  position: relative;
+}
+
+.responsive-map iframe {
+  border: 0;
+  /* height: 100%;
+  width: 100%; */
+  left: 0;
+  top: 0;
+  position: absolute;
 }

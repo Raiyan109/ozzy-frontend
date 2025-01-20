@@ -111,7 +111,9 @@ const BookingConfirmation = () => {
                         </form>
                     </div>
                     <div className="flex items-center justify-center">
-                        <button type="submit" className="block min-w-[200px] bg-[#345C8C] mt-4 py-4 rounded-full text-white text-lg mb-2">Book Appointment</button>
+                        <Link href='/booking-summary'>
+                            <button type="submit" className="block min-w-[200px] bg-[#345C8C] mt-4 py-4 rounded-full text-white text-lg mb-2">Book Appointment</button>
+                        </Link>
                     </div>
                 </div>
             </div>
