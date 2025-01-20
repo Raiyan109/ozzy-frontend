@@ -53,7 +53,7 @@ const BookingConfirmation = () => {
                     </div>
                 </div>
                 <div className="flex-1">
-                    <div className="flex flex-col items-center p-2 h-full lg:w-11/12 lg:ml-auto border rounded-xl">
+                    <div className="flex flex-col items-center p-2 lg:w-11/12 lg:ml-auto border rounded-xl">
                         <form className="max-w-lg w-full mx-auto bg-[#FAFAFA66] p-2 rounded-xl">
                             <h1 className="text-lg mb-1 py-2">Appointment Summary</h1>
                             <div className="flex items-center justify-between border-b pb-7">
@@ -64,10 +64,12 @@ const BookingConfirmation = () => {
                                         height={40}
                                         width={40}
                                     />
-                                    <div>
+                                    <div className="space-y-1">
                                         <h1 className="text-sm">Tuesday, Jan 14</h1>
-                                        <h1 className="text-xs">12:00 – 1:00 PM EST </h1>
-                                        <h1 className="text-xs">Total determined at appointment</h1>
+                                        <div>
+                                            <h1 className="text-xs">12:00 – 1:00 PM EST </h1>
+                                            <h1 className="text-xs">Total determined at appointment</h1>
+                                        </div>
                                     </div>
                                 </div>
                                 <div>
@@ -99,17 +101,17 @@ const BookingConfirmation = () => {
                                 </div>
                             </div>
 
-                            <div className="border-b py-4">
+                            <div className="py-2 space-y-2">
                                 <div className="flex justify-between items-center">
                                     <h1>Due today</h1>
                                     <h1>100$</h1>
                                 </div>
-                                <p>This appointment includes a service with a variable price. The price will be determined at the appointment.</p>
+                                <p className="text-sm">This appointment includes a service with a variable price. The price will be determined at the appointment.</p>
                             </div>
-
-
                         </form>
-                        <button type="submit" className="block min-w-[200px] bg-[#345C8C] mt-4 py-2 rounded-full text-white font-semibold mb-2">Book Appointment</button>
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <button type="submit" className="block min-w-[200px] bg-[#345C8C] mt-4 py-4 rounded-full text-white text-lg mb-2">Book Appointment</button>
                     </div>
                 </div>
             </div>
