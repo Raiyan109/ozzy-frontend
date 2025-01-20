@@ -1,5 +1,6 @@
 'use client'
 import { Calendar } from "@/components/ui/calendar"
+import Link from "next/link";
 import { useState } from "react"
 
 // Helper function to format the date
@@ -74,7 +75,9 @@ const BookingCalender = () => {
                         <p className="text-[#4E4E4E] text-sm">No Availability</p>
                     </div>
                     <div className="mt-12">
-                        <button type="submit" className="w-fit px-20 bg-[#345C8C] mt-4 py-2 rounded-full text-white font-semibold mb-2">Next</button>
+                        <Link href='/booking-confirmation'>
+                            <button type="submit" className="w-fit px-20 bg-[#345C8C] mt-4 py-2 rounded-full text-white font-semibold mb-2">Next</button>
+                        </Link>
                     </div>
                 </div>
             </div>
