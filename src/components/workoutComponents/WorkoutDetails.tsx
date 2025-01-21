@@ -3,6 +3,7 @@ import { useAppSelector } from "@/redux/hooks";
 import Image, { StaticImageData } from "next/image"
 import { useRef, useState } from "react";
 import { FiPlayCircle } from "react-icons/fi";
+import Confetti from "react-confetti";
 
 type Props = {
     id: number;
@@ -16,6 +17,8 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
     const videoRef = useRef<HTMLVideoElement | null>(null);
     const [progress, setProgress] = useState<number>(0);
     const [isVideoVisible, setIsVideoVisible] = useState<boolean>(false);
+    const [showConfetti, setShowConfetti] = useState<boolean>(false);
+    const [showPopup, setShowPopup] = useState<boolean>(false);
 
     const handleTimeUpdate = () => {
         if (videoRef.current) {
@@ -42,6 +45,18 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
             videoRef.current.pause();
             videoRef.current.currentTime = 0;
         }
+    };
+
+    const handleContinue = () => {
+        console.log('ok');
+
+        setShowConfetti(true);
+        setShowPopup(true);
+    }
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+        setShowConfetti(false);
     };
 
     return (
@@ -87,14 +102,14 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                         </video>
                         <button
                             onClick={handleCloseVideo}
-                            className="absolute top-0 right-44 bg-gray-800 text-white rounded-full p-2 w-9 h-9 flex items-center justify-center"
+                            className="absolute top-0 right-0 lg:right-44 bg-gray-800 text-white rounded-full p-2 w-9 h-9 flex items-center justify-center"
                         >
                             ✕
                         </button>
                     </div>
                 )}
                 {/* Progress Bar */}
-                {isVideoVisible && (
+                {/* {isVideoVisible && (
                     <div className="h-2 bg-gray-300 w-[500px]">
                         <div className="w-full h-4 bg-gray-400 rounded-full">
                             <div
@@ -105,11 +120,11 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                             </div>
                         </div>
                     </div>
-                )}
+                )} */}
 
                 <div className="flex items-center gap-[345px]">
                     <h3 className="text-[#4E4E4E]">{workout.name}</h3>
-                    <button className="btn min-w-[60px] px-2 ">Continue</button>
+                    <button className="btn min-w-[60px] px-2" onClick={handleContinue}>Continue</button>
                 </div>
                 <p className="text-[#4E4E4E]/80 text-sm max-w-sm">{workout.description}</p>
                 <p className="text-[#4E4E4E]/80 text-sm max-w-sm">{workout.duration}</p>
@@ -135,6 +150,27 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                     </div>
                 ))}
             </div>
+            {/* Confetti Effect */}
+            {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
+
+            {/* Popup with Badge */}
+            {showPopup && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black/50">
+                    <div className="bg-white p-6 rounded-xl shadow-lg space-y-4 text-center">
+                        <h2 className="text-2xl font-bold text-[#4E4E4E]">Congratulations!</h2>
+                        <p className="text-[#4E4E4E]/80">You've earned a badge for completing the workout!</p>
+                        <div className="mx-auto w-16 h-16 rounded-full bg-[#345C8C] flex items-center justify-center text-white text-xl font-bold">
+                            🎖
+                        </div>
+                        <button
+                            onClick={handleClosePopup}
+                            className="mt-4 px-6 py-2 bg-[#345C8C] text-white rounded-lg"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
