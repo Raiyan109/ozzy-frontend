@@ -34,7 +34,7 @@ const appointments = [
 ]
 const Book = () => {
     return (
-        <div className=' py-2 space-y-20  rounded-xl'>
+        <div className=' pt-2 pb-20 space-y-20  rounded-xl'>
             <div className='space-y-3 flex items-center justify-center flex-col text-center'>
                 <h1 className='text-4xl'>Book Appointment</h1>
             </div>

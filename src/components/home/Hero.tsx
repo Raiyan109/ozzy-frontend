@@ -15,7 +15,7 @@ const Hero = () => {
                 <p className="text-white/70 text-sm">Find Your Energy</p>
                 <h1 className="text-white text-6xl max-w-lg">Make Your Body Healthy & Fit</h1>
                 <p className="text-white/70 max-w-xl text-sm">Gymhen an unknown printer took a galley of type and scrambled.It has survived nknown printercenturies.</p>
-                <button className="btn">BOOK APPOINTMENT </button>
+                <button className="btn hover:text-white">BOOK APPOINTMENT </button>
             </div>
         </div>
     )

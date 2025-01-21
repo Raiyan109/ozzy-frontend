@@ -4,60 +4,60 @@ import WorkoutImg from "@/assets/workout-img.png"
 const workouts = [
     {
         id: 1,
-        name: 'Monday-Chest day',
+        name: 'Full Body',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit error quas porro qui. Non',
-        duration: '10 minutes',
+        duration: '10 min',
         image: WorkoutImg
     },
     {
         id: 2,
-        name: 'Monday-Chest day',
+        name: 'Jumping',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit error quas porro qui. Non',
-        duration: '10 minutes',
+        duration: '8 min',
         image: WorkoutImg
     },
     {
         id: 3,
-        name: 'Monday-Chest day',
+        name: 'Light Job',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit error quas porro qui. Non',
-        duration: '10 minutes',
+        duration: '12 min',
         image: WorkoutImg
     },
     {
         id: 4,
-        name: 'Monday-Chest day',
+        name: 'Arm Circles',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit error quas porro qui. Non',
-        duration: '10 minutes',
+        duration: '5 min',
         image: WorkoutImg
     },
     {
         id: 5,
-        name: 'Monday-Chest day',
+        name: 'Squats',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit error quas porro qui. Non',
-        duration: '10 minutes',
+        duration: '9 min',
         image: WorkoutImg
     },
     {
         id: 6,
-        name: 'Monday-Chest day',
+        name: 'Pushups',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit error quas porro qui. Non',
-        duration: '10 minutes',
+        duration: '5 min',
         image: WorkoutImg
     },
     {
         id: 7,
-        name: 'Monday-Chest day',
+        name: 'Plank',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit error quas porro qui. Non',
-        duration: '10 minutes',
+        duration: '10 min',
         image: WorkoutImg
     },
-    {
-        id: 8,
-        name: 'Monday-Chest day',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit error quas porro qui. Non',
-        duration: '10 minutes',
-        image: WorkoutImg
-    },
+    // {
+    //     id: 8,
+    //     name: 'Monday-Chest day',
+    //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit error quas porro qui. Non',
+    //     duration: '10 minutes',
+    //     image: WorkoutImg
+    // },
 ]
 
 interface WorkoutId {
