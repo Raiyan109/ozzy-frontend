@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 const Footer = () => {
@@ -112,25 +113,25 @@ const Footer = () => {
 
                                 <ul className="mt-4 space-y-4 text-sm">
                                     <li>
-                                        <a className="text-white/75 transition hover:text-white/85" href="#">
+                                        <Link className="text-white/75 transition hover:text-white/85" href="/">
                                             Home
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white/75 transition hover:text-white/85" href="#">
+                                        <Link className="text-white/75 transition hover:text-white/85" href="/workout">
                                             Workout Plan
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <a className="text-white/75 transition hover:text-white/85" href="/nutrition">
+                                            Nutrition Plan
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a className="text-white/75 transition hover:text-white/85" href="#">
-                                            Sports Plan
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a className="text-white/75 transition hover:text-white/85" href="#"> Message </a>
+                                        <Link className="text-white/75 transition hover:text-white/85" href="/subscription"> Subscription </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -140,21 +141,21 @@ const Footer = () => {
 
                                 <ul className="mt-4 space-y-4 text-sm">
                                     <li>
-                                        <a className="text-white/75 transition hover:text-white/85" href="#">
+                                        <Link href="/privacy" className="text-white/75 transition hover:text-white/85" >
                                             Privacy Policy
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white/75 transition hover:text-white/85" href="#"> Terms & Conditions </a>
+                                        <Link className="text-white/75 transition hover:text-white/85" href="/terms"> Terms & Conditions </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white/75 transition hover:text-white/85" href="#"> Trust & Safety </a>
+                                        <Link className="text-white/75 transition hover:text-white/85" href="/trust"> Trust & Safety </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white/75 transition hover:text-white/85" href="#"> FAQ</a>
+                                        <Link className="text-white/75 transition hover:text-white/85" href="/faq"> FAQ</Link>
                                     </li>
                                 </ul>
                             </div>
