@@ -56,7 +56,7 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                 {/* Progress Bar */}
                 <div className=" h-2 bg-gray-300 w-full">
                     <div className="w-full h-4 bg-gray-400 rounded-full">
-                        <div className="w-3/4 h-full text-center text-xs text-white bg-violet-500 rounded-full" style={{ width: `${progress}%` }}>
+                        <div className="w-3/4 h-full text-center text-xs text-white bg-[#345C8C] rounded-full" style={{ width: `${progress}%` }}>
                             {Math.floor(progress)}%
                         </div>
                     </div>
