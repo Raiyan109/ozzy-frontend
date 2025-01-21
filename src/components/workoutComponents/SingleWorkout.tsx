@@ -1,6 +1,6 @@
 'use client'
 import Image, { StaticImageData } from "next/image";
-import { redirect } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 
 type Props = {
     id: number;
@@ -10,8 +10,9 @@ type Props = {
     duration: string,
 }
 const SingleWorkout = ({ workout }: { workout: Props }) => {
+    const router = useRouter();
     return (
-        <div className="bg-white rounded-xl p-6 space-y-5 cursor-pointer w-[350px]" onClick={() => redirect(`/workout/${workout?.id}`)}>
+        <div className="bg-white rounded-xl p-6 space-y-5 cursor-pointer w-[350px]" onClick={() => router.push(`/workout/${workout?.id}`)}>
             <div className="flex items-center justify-center">
                 <Image
                     src={workout.image}
