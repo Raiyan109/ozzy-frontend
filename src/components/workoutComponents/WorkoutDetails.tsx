@@ -55,11 +55,13 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                 </div>
                 {/* Progress Bar */}
                 <div className=" h-2 bg-gray-300 w-full">
-                    <div
-                        className="h-full bg-blue-500 transition-all duration-200"
-                        style={{ width: `${progress}%` }}
-                    ></div>
+                    <div className="w-full h-4 bg-gray-400 rounded-full">
+                        <div className="w-3/4 h-full text-center text-xs text-white bg-violet-500 rounded-full" style={{ width: `${progress}%` }}>
+                            {Math.floor(progress)}%
+                        </div>
+                    </div>
                 </div>
+
                 <div className="flex items-center gap-[345px]">
                     <h3 className="text-[#4E4E4E]">{workout.name}</h3>
                     <button className="btn min-w-[60px] px-2 ">Continue</button>
