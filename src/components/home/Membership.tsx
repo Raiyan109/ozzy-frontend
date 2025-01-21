@@ -79,7 +79,7 @@ const Membership = ({ plans }: { plans: Plan[] }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {plans.map((plan: Plan) => (
                         <div key={plan.id} className="bg-white rounded-xl w-64 py-6">
-                            <div className="flex flex-col items-center justify-center text-[#EB4B73] gap-2 pb-5 border-b-2 border-b-[#EB4B73]/20 min-h-[130px]">
+                            <div className="flex flex-col items-center justify-center text-[#345C8C] gap-2 pb-5 border-b-2 border-b-[#345C8C]/20 min-h-[130px]">
                                 <h1 className="text-xl text-center">{plan.name}</h1>
                                 <div className="flex flex-col items-center">
                                     <div className="flex items-center text-xl">

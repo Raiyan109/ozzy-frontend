@@ -70,19 +70,20 @@ const Subscriptions = ({ plans }: { plans: Plan[] }) => {
         }
     }
     return (
-        <div className=' py-32 space-y-20  rounded-xl'>
+        <div className=' py-16 space-y-20  rounded-xl'>
             <div className='flex items-center justify-center gap-12'>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {plans.map((plan: Plan) => (
-                        <div key={plan.id} className="bg-white rounded-xl w-64 py-6">
+                        <div key={plan.id} className="bg-white rounded-xl w-64 py-2">
                             <div className="flex flex-col items-center justify-center text-[#345C8C] gap-2 pb-5 border-b-2 border-b-[#345C8C]/20 min-h-[130px]">
                                 <h1 className="text-xl text-center">{plan.name}</h1>
-                                <div className="flex flex-col items-center">
+                                <div className="">
                                     <div className="flex items-center text-xl">
-                                        <span>{plan.price === 0 ? '' : '$'}</span>
-                                        <h2>{plan.price === 0 ? 'Free' : plan.price}</h2>
+                                        <span className="text-sm pr-1">Membership</span>
+                                        <span className="text-sm">{plan.price === 0 ? '' : '$'}</span>
+                                        <h2 className="text-sm">{plan.price === 0 ? 'Free' : plan.price}</h2>
+                                        <span className="text-xs">{plan.price === 0 ? '' : '/month'}</span>
                                     </div>
-                                    <span className="text-xs">{plan.price === 0 ? '' : '/month'}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center justify-center gap-7 py-6">

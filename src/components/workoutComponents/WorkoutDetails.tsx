@@ -87,7 +87,7 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                         </video>
                         <button
                             onClick={handleCloseVideo}
-                            className="absolute top-2 right-2 bg-gray-800 text-white rounded-full p-2"
+                            className="absolute top-0 right-44 bg-gray-800 text-white rounded-full p-2 w-9 h-9 flex items-center justify-center"
                         >
                             ✕
                         </button>
@@ -95,7 +95,7 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                 )}
                 {/* Progress Bar */}
                 {isVideoVisible && (
-                    <div className="h-2 bg-gray-300 w-full">
+                    <div className="h-2 bg-gray-300 w-[500px]">
                         <div className="w-full h-4 bg-gray-400 rounded-full">
                             <div
                                 className="h-full text-center text-xs text-white bg-[#345C8C] rounded-full"
