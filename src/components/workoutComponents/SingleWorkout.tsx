@@ -1,6 +1,6 @@
 'use client'
 import Image, { StaticImageData } from "next/image";
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 type Props = {
     id: number;
