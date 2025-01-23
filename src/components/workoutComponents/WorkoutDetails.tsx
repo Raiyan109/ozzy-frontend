@@ -88,7 +88,7 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                     </div>
                 )}
                 {/* Custom Video Player */}
-                {isVideoVisible && (
+                {/* {isVideoVisible && (
                     <div className="relative">
                         <video
                             ref={videoRef}
@@ -107,7 +107,7 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                             ✕
                         </button>
                     </div>
-                )}
+                )} */}
                 {/* Progress Bar */}
                 {/* {isVideoVisible && (
                     <div className="h-2 bg-gray-300 w-[500px]">
@@ -150,6 +150,31 @@ const WorkoutDetails = ({ workout, workouts }: { workout: Props, workouts: Props
                     </div>
                 ))}
             </div>
+
+            {/* Video Popup Modal */}
+            {isVideoVisible && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
+                    <div className="relative bg-white p-4 rounded-xl">
+                        <video
+                            ref={videoRef}
+                            onTimeUpdate={handleTimeUpdate}
+                            onEnded={handleVideoEnd}
+                            className="w-full max-w-[500px] h-[300px] object-cover rounded-xl"
+                            controls
+                        >
+                            <source src="/videos/snow.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <button
+                            onClick={handleCloseVideo}
+                            className="absolute top-2 right-2 bg-gray-800 text-white rounded-full p-2 w-9 h-9 flex items-center justify-center"
+                        >
+                            ✕
+                        </button>
+                    </div>
+                </div>
+            )}
+
             {/* Confetti Effect */}
             {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
 
