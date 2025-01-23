@@ -5,7 +5,7 @@ const Faq = () => {
                 className="relative w-full bg-white px-6 py-10 mt-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-[1580px] sm:rounded-lg sm:px-10">
                 <div className="mx-auto px-5 py-7">
                     <div className="flex flex-col items-center">
-                        <h2 className="mt-5 text-[#333333] text-center text-[45px] font-bold tracking-tight">Frequently Asked Questions!</h2>
+                        <h2 className="mt-5 text-[#333333] text-center text-[45px] tracking-tight">Frequently Asked Questions!</h2>
                     </div>
                     <div className="mx-auto mt-8 grid max-w-xl space-y-3">
                         <div className="py-5 bg-[#F5F7F9] px-3 rounded-xl">
